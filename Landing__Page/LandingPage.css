@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.landhead{
+    background-color: rgb(255, 255, 255);
+    justify-content: center; 
+    align-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+.landnavbar {
+    display: flex;
+}
+
+.nav__menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.brandlandname{
+    display: flex;
+    position: relative;
+    left: 60px;
+    font-size: 30px;
+}
+.brandnamecolor{
+    color: red;
+}
+.landlogo {
+    width: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.landlogo img {
+    width: 60px;
+    position: relative;
+    left: 42px;
+    margin: 10px;
+
+}
+
+.landnavbar li {
+    float: left;
+    list-style: none;
+    margin: 0px 22px;
+}
+
+.landnavbar li a {
+    padding: 3px 3px;
+    color: rgb(124, 111, 111);
+    text-decoration: none;
+    font-size: 27px;
+}
+
+.landnavbar li a:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sec1{
+    background: rgb(226 255 254);
+    display: flex;
+    height: 500px;
+}
+.left{
+    display: inline-block;
+    width: 50%;
+}
+
+.right{
+    display: inline-block;
+    width: 50%;
+}
+.desc{
+    position: relative;
+    top: 110px;
+    left: 50px;
+    font-size: 66px
+}
+.btn1{
+    font-size: 20px;
+    position: relative;
+    top: 150px;
+    width: 180px;
+    border-radius: 14px;
+    height: 39px;
+    left: 60px;
+    color: white;
+    background-color: black;
+}
+.btn1:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.ahref{
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: 200px;
+}
+a.social {
+    /* background-color: #fff; */
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: 0 10px;
+    border: #fff solid 2px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.social.instagram{
+    background-color: #d12c7a;
+}
+a.social.facebook{
+    background-color: #3a5796;
+}
+a.social.linkedin{
+    background-color: #0371ae;
+}
+a.social.twitter{
+    background-color: #1c9ceb;
+}
+a.social::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover::before {
+    top: 0;
+}
+
+a.social.facebook::before {
+    background-color: #ffffff;
+}
+
+a.social.twitter::before {
+    background-color: #ffffff;
+}
+
+a.social.linkedin::before {
+    background-color: #ffffff;
+}
+
+a.social.instagram::before {
+    background-color: #ffffff;
+}
+
+a.social svg {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover svg {
+    transform: rotate(360deg);
+}
+
+a.social svg path {
+    fill: #ffffff;
+    transition: 0.5s all ease-in-out;
+}
+
+a.social:hover svg path {
+    fill: #272222;
+ } 
+.right img{
+    position: relative;
+    height: 400px;
+    top: 65px;
+}
+
+
+#product-container{
+    background-color: #f7f7f7;
+}
+#products{
+    display: flex;
+    width: 100%;
+}
+#products .probox{ 
+    margin: 15px 6px;
+    background: rgb(255, 255, 255);
+    /* text-align: center; */
+    width: 25%;
+    border-radius: 15px;
+}
+
+#products .probox img{ 
+    height: 330px;
+    /* margin: auto; */
+    width: 100%;
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.sampledesc{
+    width: 90%;
+}
+.h-primarycenter{
+    margin-top: 20px;
+    position: relative;
+    left: 15px;
+}
+.center1{
+    margin-top: 20px;
+    font-size: 22px;
+    position: relative;
+    left: 15px;
+}
+.befcenter1{
+    font-size: 18px;
+}
+.centersale{
+    font-size: 14px;
+    color: rgb(1, 161, 1);
+}
+.btn3{
+    position: relative;
+    left: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 17px;
+    width: 265px;
+    color: white;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #282828;
+}
+.btn3:hover{
+    cursor: pointer;
+}
+#products .probox p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+#services-container{
+    background-color: #f7f7f7;
+}
+#services{
+    display: flex;
+    width: 900px;
+    margin: auto;
+}
+#services .box{ 
+    padding: 20px;
+    margin: 30px 6px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#services .box img{ 
+    height: 125px;
+    margin: auto;
+    display: block
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+.contact{
+    width: 600px;
+    margin: 30px auto;
+}
+.brand{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+.brandsp{
+    color: red;
+}
+.signup{
+    text-align: center;
+    width: 567px;
+    font-size: 22px;
+    margin: 20px;
+}
+.contact input{
+    display: block;
+    margin: 8px auto;
+    font-size: 16px;
+    width: 338px;
+    height: 35px;
+    padding: 2px 14px;
+    border-radius: 4px;
+    border-color: rgb(189, 182, 182);
+
+}
+.contact button{
+    color: white;
+    height: 38px;
+    width: 260px;
+    display: block;
+    font-size: 17px;
+    margin: 15px auto;
+    background-color: #ff2d2d;
+    border-color: #ff2d2d;
+    border-radius: 14px;
+}
+.contact button:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+
+}
